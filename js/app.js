@@ -131,7 +131,7 @@ const BASE = [
 
 const carrito = [];
 
-let total = 0;
+// let total = 0;
 
 function renderizarProductos() {
   let tienda = document.getElementById("tienda");
@@ -199,6 +199,8 @@ function renderizarCarrito() {
 }
 
 function calcularTotal() {
+  let total = 0;
+
   carrito.forEach((producto) => {
     total += producto.precio * producto.cantidad;
   });
